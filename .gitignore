@@ -1,0 +1,16 @@
+# Kiro spec files (working files, not for public repo)
+.kiro/
+
+# Old/draft versions
+deepbi-website-audit-summary.md
+deepbi-website-audit-summary-FINAL.md
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
