@@ -5,7 +5,7 @@ Strategic recommendations and improvement proposals for Deep.BI across website q
 ## 📋 Current Proposals
 
 ### 🌐 Website Quality
-**[Website Quality Audit Report (Jan 2026) →](./Deep-BI-Website-Audit-Report-Jan-2026.md)**
+**[Website Quality Audit Report (Jan 2026) →](./proposals/website/Deep-BI-Website-Audit-Report-Jan-2026.md)**
 
 Independent quality audit identifying 8 critical issues affecting user experience and brand credibility.
 
@@ -33,13 +33,13 @@ Independent quality audit identifying 8 critical issues affecting user experienc
 
 ```
 deepbi-improvement-proposals/
-├── README.md                                    # This file
-├── Deep-BI-Website-Audit-Report-Jan-2026.md    # Website quality audit
-└── proposals/                                   # Future proposals
+├── README.md                                           # Overview & index
+└── proposals/                                          # All improvement proposals
     ├── website/
-    ├── marketing/
-    ├── sales/
-    └── operations/
+    │   └── Deep-BI-Website-Audit-Report-Jan-2026.md   # Website quality audit
+    ├── marketing/                                      # Future: Marketing proposals
+    ├── sales/                                          # Future: Sales proposals
+    └── operations/                                     # Future: Operations proposals
 ```
 
 ## 🎯 Proposal Categories
