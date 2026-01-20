@@ -123,6 +123,7 @@ The following sections provide comprehensive documentation of each identified is
 **Locations & Proof:**
 
 **Page:** https://www.deep.bi/terms
+
 **Proof 1:**
 ```
 Service: Service under the http://deepbi-www.azurewebsites.net website operated by Deep BI, Inc.
@@ -144,7 +145,8 @@ You can contact our Copyright Agent via email at legal@deep.bi
 ---
 
 ### 2. Spelling Errors on Pricing Page
-**Severity: HIGH**  
+**Severity: HIGH**
+
 **Page:** https://www.deep.bi/pricing/apache-druid-services
 
 **Issues:**
@@ -185,6 +187,7 @@ Best for with single node Druid setups
 ### 3. Content Duplication on Subscriptions Page
 
 **Page:** https://www.deep.bi/solutions/subscriptions
+
 **Severity:** MEDIUM
 **Problem:** Paragraph about "80ms" processing time appears twice consecutively
 **Impact:** Looks like a copy-paste error
@@ -212,7 +215,9 @@ any connected application through our powerful Scoring API.
 ### 4. Privacy Policy - Quotation Mark Formatting
 
 **Page:** https://www.deep.bi/privacy
+
 **Location:** Multiple instances throughout the document
+
 **Severity:** LOW
 **Problem:** Missing space in quotation marks: "Us"or "Our" (should be "Us" or "Our")
 
