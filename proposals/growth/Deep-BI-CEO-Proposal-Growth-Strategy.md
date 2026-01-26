@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-**"Jo dikhta hai, wo bikta hai"** — Hindi (Indian language) quote meaning "What is visible, sells"
+**"Jo dikhta hai, wohi bikta hai"** — Hindi (Indian language) quote meaning **"What is visible, sells"**
 
 ### Key Points at a Glance:
 
