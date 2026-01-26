@@ -9,16 +9,27 @@
 
 ## Executive Summary
 
-As someone who has analyzed Deep.BI's online presence and market positioning, I wanted to share some observations and suggestions that could help accelerate growth. These are my personal perspectives based on my analysis - you may already be aware of some of these, but I hope this provides value.
-
 **"Jo dikhta hai, wo bikta hai"** — Hindi (Indian language) quote meaning "What is visible, sells"
+
+### Key Points at a Glance:
+
+1. **SEO:** Deep.BI ranks #39 for "Apache Druid" — nobody goes to page 2 of Google
+2. **LinkedIn:** CEO has 10K followers, company has only 1K — 10x gap to leverage
+3. **Content:** YouTube (no presence), Medium (last post 2019), Dev.to & Twitter (no presence)
+4. **Leads:** Monitor Druid Slack/GitHub (stargazers, watchers, complex issues) for potential customers
+5. **Target:** Track companies posting Druid job openings and organizations with large-scale data engineering teams
+6. **Website:** Development URLs in production, spelling errors on pricing page — quick fixes needed
+
+---
+
+As someone who has analyzed Deep.BI's online presence and market positioning, I wanted to share some observations and suggestions that could help accelerate growth. These are my personal perspectives based on my analysis - you may already be aware of some of these, but I hope this provides value.
 
 ---
 
 ## 1. SEO & Search Visibility
 
 ### Current State:
-- Deep.BI ranks approximately #39 when searching "Apache Druid"
+- **Deep.BI ranks approximately #39 when searching "Apache Druid"**
 - This is a significant missed opportunity given your expertise
 
 ### Why This Is Critical:
@@ -29,14 +40,6 @@ As someone who has analyzed Deep.BI's online presence and market positioning, I 
 - The top 3 results get ~55% of all clicks
 - Position #10 gets ~2.5% of clicks; Position #39 gets virtually nothing
 - If you're not in the top 10, you're invisible to potential customers
-
-| Keyword | Current Rank | Target Rank | Priority |
-|---------|--------------|-------------|----------|
-| "Apache Druid" | #39 | Top 10 | HIGH |
-| "Apache Druid consulting" | ? | Top 10 | HIGH |
-| "Apache Druid cost optimization" | ? | Top 10 | HIGH |
-| "Druid performance tuning" | ? | Top 10 | HIGH |
-| "Apache Druid managed services" | ? | Top 10 | MEDIUM |
 
 ### SEO Strategy:
 
@@ -126,9 +129,9 @@ Active posting on multiple platforms creates:
 
 ### Community Engagement (Builds Credibility + Leads):
 
-**Apache Druid Slack/Discord:**
+**Apache Druid Slack:**
 - Answer troubleshooting questions
-- **Update your profile:** Make sure your Slack/Discord profile shows Deep.BI - when you help someone, they'll see your company and remember who helped them
+- **Update your profile:** Make sure your Slack profile shows Deep.BI - when you help someone, they'll see your company and remember who helped them
 - Share optimization tips
 - Build reputation as the go-to experts
 - **Identify organizations:** Look at who's posting troubleshooting questions - check their company/email domain to identify potential leads
@@ -168,8 +171,6 @@ During my audit, I found several issues that may impact credibility:
 - Standardize design consistency across all pages
 - Add clear case studies with metrics (cost savings, performance gains)
 - Include customer testimonials and logos
-
-*Detailed audit reports with specific fixes are available upon request.*
 
 ---
 
