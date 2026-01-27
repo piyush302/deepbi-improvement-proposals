@@ -285,4 +285,4 @@ flowchart TB
 
 ---
 
-*Prepared by Piyush Darshan | [email protected]*
+*Prepared by Piyush Darshan*
