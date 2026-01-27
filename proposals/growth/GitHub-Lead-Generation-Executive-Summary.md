@@ -4,6 +4,12 @@
 
 ---
 
+## Executive Summary
+
+This document outlines an automated lead generation system that identifies potential customers from the Apache Druid GitHub repository community. The system extracts, enriches, and scores leads to help Deep.BI's sales team prioritize outreach to the most promising prospects.
+
+---
+
 ## System Overview
 
 ```mermaid
