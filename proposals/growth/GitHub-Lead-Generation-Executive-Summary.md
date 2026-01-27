@@ -285,4 +285,4 @@ flowchart TB
 
 ---
 
-*Deep.BI Lead Generation Initiative | January 2026*
+*Prepared by Piyush Darshan | [email protected]*
