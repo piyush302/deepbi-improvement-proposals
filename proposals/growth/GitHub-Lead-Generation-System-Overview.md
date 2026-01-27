@@ -51,28 +51,130 @@ flowchart TB
 
 ## User Journey: From GitHub Activity to Qualified Lead
 
+### Visual Flow
+
 ```mermaid
-journey
-    title Lead Generation User Journey
-    section GitHub Activity
-      User stars Apache Druid repo: 5: Potential Lead
-      User watches Apache Druid repo: 5: Potential Lead
-      User creates issue on repo: 5: Potential Lead
-    section Automated Collection
-      Workflow extracts user profile: 3: n8n System
-      Delta detection flags new user: 3: n8n System
-    section Profile Enrichment
-      LinkedIn profile discovered: 3: n8n System
-      Company intelligence gathered: 3: n8n System
-      Keywords analyzed: 3: n8n System
-    section Lead Qualification
-      Composite score calculated: 3: n8n System
-      Lead tier assigned (Hot/Warm/Cold): 3: n8n System
-      Outreach recommendations generated: 3: n8n System
-    section Sales Action
-      Sales reviews qualified leads: 5: Sales Team
-      Personalized outreach initiated: 5: Sales Team
-      Deal opportunity created: 5: Sales Team
+flowchart TD
+    subgraph PHASE1["🎯 PHASE 1: GitHub Activity"]
+        direction LR
+        A1["⭐ Stars Repo"]
+        A2["👁️ Watches Repo"]
+        A3["🐛 Creates Issue"]
+    end
+
+    subgraph PHASE2["🔄 PHASE 2: Data Collection"]
+        direction LR
+        B1["📥 Extract Profile"]
+        B2["🆕 Detect if New"]
+    end
+
+    subgraph PHASE3["🔍 PHASE 3: Enrichment"]
+        direction LR
+        C1["💼 Find LinkedIn"]
+        C2["🏢 Get Company Info"]
+        C3["🔑 Analyze Keywords"]
+    end
+
+    subgraph PHASE4["📊 PHASE 4: Qualification"]
+        direction LR
+        D1["🧮 Calculate Score"]
+        D2["🏷️ Assign Tier"]
+        D3["💡 Generate Recommendations"]
+    end
+
+    subgraph PHASE5["🚀 PHASE 5: Sales Action"]
+        direction LR
+        E1["📋 Review Leads"]
+        E2["📧 Personalized Outreach"]
+        E3["🤝 Create Opportunity"]
+    end
+
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
+    B1 --> B2
+    B2 --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> D1
+    D1 --> D2
+    D2 --> D3
+    D3 --> E1
+    E1 --> E2
+    E2 --> E3
+
+    style PHASE1 fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style PHASE2 fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    style PHASE3 fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style PHASE4 fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style PHASE5 fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+```
+
+### Detailed Journey Steps
+
+| Phase | Step | Actor | Description | Output |
+|-------|------|-------|-------------|--------|
+| **1. GitHub Activity** | ⭐ Star | User | User discovers and stars Apache Druid repo | GitHub event |
+| | 👁️ Watch | User | User subscribes to repo notifications | GitHub event |
+| | 🐛 Issue | User | User creates issue (bug, feature, question) | GitHub event + context |
+| **2. Collection** | 📥 Extract | n8n | Pull user profile from GitHub API | Raw profile data |
+| | 🆕 Delta | n8n | Compare against previous run | `is_new` flag |
+| **3. Enrichment** | 💼 LinkedIn | n8n | Find and extract LinkedIn profile | Title, company, history |
+| | 🏢 Company | n8n | Gather company intelligence | Size, team, budget tier |
+| | 🔑 Keywords | n8n | Scan for relevant keywords | Keyword score |
+| **4. Qualification** | 🧮 Score | n8n | Calculate composite score (0-100) | Lead score |
+| | 🏷️ Tier | n8n | Assign Hot/Warm/Cold tier | Priority level |
+| | 💡 Recommend | n8n | Generate outreach strategy | Talking points, channel |
+| **5. Sales** | 📋 Review | Sales | Review qualified leads in dashboard | Prioritized list |
+| | 📧 Outreach | Sales | Send personalized message | Initial contact |
+| | 🤝 Opportunity | Sales | Convert to sales opportunity | Pipeline entry |
+
+### Lead Transformation Example
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        LEAD TRANSFORMATION EXAMPLE                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  GITHUB USER                    ENRICHED LEAD                QUALIFIED LEAD │
+│  ───────────                    ─────────────                ────────────── │
+│                                                                             │
+│  @john_doe          ──►         John Doe              ──►    🔥 HOT LEAD   │
+│  ⭐ Starred repo               Data Engineer                 Score: 82/100 │
+│  Bio: "Data stuff"             @ Acme Corp (500 emp)                        │
+│                                LinkedIn: ✓                   Outreach:      │
+│                                Keywords: druid, flink        → LinkedIn DM  │
+│                                                              → Talk: Druid  │
+│                                                                 migration   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Conversion Funnel
+
+```mermaid
+flowchart TB
+    subgraph Funnel["Lead Conversion Funnel"]
+        F1["👥 15,000+ GitHub Users<br/>(Stargazers + Watchers + Issue Creators)"]
+        F2["📊 ~12,000 with Profiles<br/>(80% data completeness)"]
+        F3["💼 ~6,000 with LinkedIn<br/>(50% enriched)"]
+        F4["🔥 ~1,500 Hot Leads<br/>(Score > 70)"]
+        F5["🤝 ~150 Opportunities<br/>(10% conversion)"]
+        F6["💰 ~30 Deals<br/>(20% close rate)"]
+    end
+
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
+    F4 --> F5
+    F5 --> F6
+
+    style F1 fill:#e3f2fd,stroke:#1976d2
+    style F2 fill:#e8f5e9,stroke:#388e3c
+    style F3 fill:#fff8e1,stroke:#ffa000
+    style F4 fill:#ffebee,stroke:#d32f2f
+    style F5 fill:#f3e5f5,stroke:#7b1fa2
+    style F6 fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
 ```
 
 ---
